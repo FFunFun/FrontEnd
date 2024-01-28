@@ -1,0 +1,31 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "master", "develop" ]
+  pull_request:
+    branches: [ "master", "develop" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+        # Node.js의 다양한 버전을 모두 테스트하기 위함
+
+    steps:
+    - uses: actions/checkout@v3 # checkout은 코드를 CI서버로 다운받아서 브랜치 변경해주고...등등
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3 # Node.js 설치
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm' # npm 을 한 번만 설치할 수 있도록 캐싱 지정
+    - run: npm ci
+    # - run: npm run build --if-present
+    # - run: npm test
