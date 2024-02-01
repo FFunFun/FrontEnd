@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a833b0d3-1504-4438-a13a-30277fb4d6d3" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/ffunfun/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/.idea/ffunfun.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffunfun/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2blhlI2dtlh9hkEgBzG0CqV3mLL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feat/react-module-init",
+    "last_opened_file_path": "D:/github/FFunFun/FrontEnd",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="a833b0d3-1504-4438-a13a-30277fb4d6d3" name="변경" comment="" />
+      <created>1706795723533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706795723533</updated>
+      <workItem from="1706795726001" duration="49000" />
+      <workItem from="1706796765072" duration="212000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
