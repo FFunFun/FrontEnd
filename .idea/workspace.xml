@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a833b0d3-1504-4438-a13a-30277fb4d6d3" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/ffunfun/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/.idea/ffunfun.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffunfun/tsconfig.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Chatlist.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Register.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Timeline.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +30,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2blhlI2dtlh9hkEgBzG0CqV3mLL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,12 +41,22 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feat/react-module-init",
-    "last_opened_file_path": "D:/github/FFunFun/FrontEnd",
+    "git-widget-placeholder": "feat/pagenation",
+    "last_opened_file_path": "D:/github/FFunFun/FrontEnd/src/pages",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\github\\FFunFun\\FrontEnd\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\FFunFun\FrontEnd\src\pages" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -67,6 +67,7 @@
       <updated>1706795723533</updated>
       <workItem from="1706795726001" duration="49000" />
       <workItem from="1706796765072" duration="212000" />
+      <workItem from="1707629396447" duration="1443000" />
     </task>
     <servers />
   </component>
