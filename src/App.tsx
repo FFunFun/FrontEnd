@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from "./pages/Home";
-import Register from "./pages/Register";
+import {Register} from "./pages/Register";
 import Timeline from "./pages/Timeline";
 import Chatlist from "./pages/Chatlist";
 import Profile from "./pages/Profile";
