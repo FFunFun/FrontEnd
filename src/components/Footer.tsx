@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
 // Styled components
@@ -17,19 +17,22 @@ const FooterButtons = styled.div`
   justify-content: space-around;
 `;
 
-const StyledLink = styled(Link)`
-  color: #ffffff;
-  text-decoration: none;
+const StyledLink = styled(Link)<{ isCurrentPage: boolean }>`
+    color: ${({ isCurrentPage }) => (isCurrentPage ? '#fff' : '#999')};
+    text-decoration: none;
+    font-weight: ${({ isCurrentPage }) => (isCurrentPage ? 'bold' : 'normal')};
 `;
 
 const Footer: React.FC = () => {
+    const location = useLocation();
+
     return (
         <FooterContainer>
             <FooterButtons>
-                <StyledLink to="/">Home</StyledLink>
-                <StyledLink to="/register">Register</StyledLink>
-                <StyledLink to="/timeline">Timeline</StyledLink>
-                <StyledLink to="/chatlist">Chatlist</StyledLink>
+                <StyledLink to="/" isCurrentPage={location.pathname === '/'}>Home</StyledLink>
+                <StyledLink to="/register" isCurrentPage={location.pathname === '/register'}>Register</StyledLink>
+                <StyledLink to="/timeline" isCurrentPage={location.pathname === '/timeline'}>Timeline</StyledLink>
+                <StyledLink to="/chatlist" isCurrentPage={location.pathname === '/chatlist'}>Chatlist</StyledLink>
             </FooterButtons>
         </FooterContainer>
     );
