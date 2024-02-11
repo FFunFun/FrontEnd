@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Timeline from "./pages/Timeline";
 import Chatlist from "./pages/Chatlist";
+import Profile from "./pages/Profile";
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/timeline" element={<Timeline />} />
         <Route path="/chatlist" element={<Chatlist />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
   );
 };
