@@ -1,13 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import styled from 'styled-components';
-
-const Styled = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 25px;
-`;
+import { useNavigate } from 'react-router-dom';
 
 const StyledContainer = styled.div`
   display: flex;
@@ -136,6 +129,9 @@ const StyledOption = styled.option`
 interface IRegisterProps {}
 
 export const Register: React.FC<IRegisterProps> = () => {
+  const navigate = useNavigate();
+
+
   const [school, setSchool] = useState<string>('');
   const [name, setName] = useState<string>('');
   const [admissionYear, setAdmissionYear] = useState<string>('');
@@ -158,10 +154,14 @@ export const Register: React.FC<IRegisterProps> = () => {
     console.log('인증코드 확인');
   };
 
+  const handleGoBack = () => {
+    navigate(-1); // 뒤로 이동
+  };
+
   return (
     <div>
       <StyledHeader>
-          <StyledBackButton>
+          <StyledBackButton onClick={handleGoBack}>
           <StyledImage src={process.env.PUBLIC_URL + '/arrow_back.png'} alt="프로필" />
           </StyledBackButton>
           <StyledText>회원가입</StyledText>
