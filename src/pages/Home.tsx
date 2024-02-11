@@ -1,4 +1,6 @@
+import Footer from "../components/Footer";
 import styled from 'styled-components';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const StyledContainer = styled.div`
   display: flex;
@@ -15,18 +17,26 @@ const StyledImage = styled.img`
 `;
 
 const StyledButton = styled.img`
-  margin-top: 10px; /* 버튼 간격 조정 */
+  margin-top: 5px; /* 버튼 간격 조정 */
 `;
 
 export default  function Home() {
     return(
         <div>
             <StyledContainer>
+            
                 <StyledImage src={process.env.PUBLIC_URL + '/FfunLogo.png'} alt="Logo" />
-                <StyledButton src={process.env.PUBLIC_URL + '/NaverLogin.png'} alt="Naver"/>
-                <StyledButton src={process.env.PUBLIC_URL + '/KakaoLogin.png'} alt="Kakao" />
-                <StyledButton src={process.env.PUBLIC_URL + '/GoogleLogin.png'} alt="Google" />
+                <Link to="/register">
+                    <StyledButton src={process.env.PUBLIC_URL + '/NaverLogin.png'} alt="Naver"/>
+                </Link>
+                <Link to="/register">
+                    <StyledButton src={process.env.PUBLIC_URL + '/KakaoLogin.png'} alt="Kakao" />
+                </Link>
+                <Link to="/register">
+                    <StyledButton src={process.env.PUBLIC_URL + '/GoogleLogin.png'} alt="Google" />
+                </Link>
             </StyledContainer>
+            <Footer/>
         </div>
     )
 }
