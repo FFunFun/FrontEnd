@@ -52,7 +52,7 @@ const AddBox = styled.div`
     height: 8vh;
 
     margin: 0 auto; /* 가운데 정렬 스타일 추가 */
-    margin-top: 2rem;
+    margin-top: -3rem;
 
     border: 2px solid lightgray;
     border-radius: 1rem;
@@ -107,9 +107,6 @@ export default function Timeline() {
 
     return (
         <div>
-            <LogoContainer>
-                <img src={process.env.PUBLIC_URL + 'img/logo/timeline_logo.png'} alt="Logo"/>
-            </LogoContainer>
             <TimelineContainer>
                 <div style={{width: '100%'}}>
                     {isLoading ? (
@@ -129,6 +126,9 @@ export default function Timeline() {
                     )}
                 </div>
             </TimelineContainer>
+            <LogoContainer>
+                <img src={process.env.PUBLIC_URL + 'img/logo/timeline_logo.png'} alt="Logo"/>
+            </LogoContainer>
             <Footer/>
         </div>
     );

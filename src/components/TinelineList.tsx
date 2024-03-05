@@ -3,11 +3,13 @@ import React from 'react';
 import {IoChatboxEllipsesSharp} from "react-icons/io5";
 import {FaHeart} from "react-icons/fa6";
 import {TimelineItem} from "../pages/Timeline";
+import {FaCircle} from "react-icons/fa6";
+
 
 const TimelineContent = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    //gap: 4rem;
     width: 100%;
 `;
 
@@ -15,7 +17,7 @@ const TimelineBox = styled.div`
     display: flex;
     justify-content: space-between;
 
-    padding: 0 0.5rem;
+    padding: 0 0.5rem 4rem 0.5rem;
 `;
 
 const TimelineText = styled.div`
@@ -48,39 +50,64 @@ const Icon = styled.div`
     margin-top: 0.2rem;
 `;
 
+const Circle = styled.div`
+    color: blue;
+    font-size: 1rem;
+    position: absolute; /* 부모 요소에 상대적으로 위치 */
+    left: 38vw; /* 부모 요소의 중앙에 위치 */
+    transform: translate(-50%, -10%); /* 가운데 정렬 */
+`;
+
+const Line = styled.div`
+    background-color: blue;
+    width: 3px;
+    height: 40vh; /* 부모 요소의 높이에 맞게 설정 */
+    position: absolute; /* 부모 요소에 상대적으로 위치 */
+    left: 38vw; /* 부모 요소의 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬 */
+`;
+
 const TimelineList: React.FC<{ items: TimelineItem[] }> = ({items}) => {
 
     return (
-        <div>
-            <TimelineContent>
-                {items.map((item: any) => (
-                    <TimelineBox>
-                        <TimelineText>
-                            {item.date}
+        <TimelineContent>
+            {items.map((item: TimelineItem, key: number) => (
+                <TimelineBox>
+                    <TimelineText>
+                        {item.date}
+                        <br/>
+                        {item.content}
+                    </TimelineText>
+                    <div>
+                        <Circle>
+                            <FaCircle/>
+                        </Circle>
+                        {key < items.length - 1 ? (
+                            <Line/>
+                        ) : (
                             <br/>
-                            {item.content}
-                        </TimelineText>
-                        <div>
-                            <TimelineImg src={'https://picsum.photos/200/200'}/>
-                            <CommentContainer>
-                                <Comment color="gray">
-                                    <Icon>
-                                        <IoChatboxEllipsesSharp/>
-                                    </Icon>
-                                    23
-                                </Comment>
-                                <Comment color="red">
-                                    <Icon>
-                                        <FaHeart/>
-                                    </Icon>
-                                    7
-                                </Comment>
-                            </CommentContainer>
-                        </div>
-                    </TimelineBox>
-                ))}
-            </TimelineContent>
-        </div>
+                        )}
+                    </div>
+                    <div>
+                        <TimelineImg src={'https://picsum.photos/200/200'}/>
+                        <CommentContainer>
+                            <Comment color="gray">
+                                <Icon>
+                                    <IoChatboxEllipsesSharp/>
+                                </Icon>
+                                {(key + 2) * 7}
+                            </Comment>
+                            <Comment color="red">
+                                <Icon>
+                                    <FaHeart/>
+                                </Icon>
+                                {(key + 7) * 3}
+                            </Comment>
+                        </CommentContainer>
+                    </div>
+                </TimelineBox>
+            ))}
+        </TimelineContent>
     );
 }
 
