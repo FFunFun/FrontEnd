@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import styled from "styled-components";
 import React, {useState, useEffect} from 'react';
-import {IoChatboxEllipsesSharp} from "react-icons/io5";
+import {IoChatboxEllipsesSharp, IoAddCircleOutline} from "react-icons/io5";
 import {FaHeart} from "react-icons/fa6";
 
 
@@ -31,8 +31,11 @@ const TimelineContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
-    padding: 10vh 0 15vh 0;
+    gap: 2rem;
+
+    padding: 10vh 0;
     overflow-y: scroll;
 
     font-size: 12pt;
@@ -42,14 +45,14 @@ const TimelineContainer = styled.div`
 const TimelineContent = styled.div`
     display: flex;
     flex-direction: column;
-
+    gap: 4rem;
     width: 100%;
 `;
 const TimelineBox = styled.div`
     display: flex;
     justify-content: space-between;
 
-    padding: 0 0.5rem 4rem 0.5rem;
+    padding: 0 0.5rem;
 `;
 const TimelineText = styled.div`
     width: 30vw;
@@ -76,6 +79,22 @@ const Comment = styled.div`
 const Icon = styled.div`
     margin-right: 0.3rem;
     margin-top: 0.2rem;
+`;
+const AddBox = styled.div`
+    display: flex; /* 아이콘과 텍스트를 가운데로 정렬하기 위해 flex 사용 */
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+
+    width: 90vw;
+    height: 8vh;
+
+    margin: 0 auto; /* 가운데 정렬 스타일 추가 */
+
+    border: 2px solid lightgray;
+    border-radius: 1rem;
+
+    font-size: 3rem;
+    color: lightgray;
 `;
 
 interface MyListItem {
@@ -124,11 +143,11 @@ export default function Timeline() {
                 <WellcomeText>
                     '소전17' 뻔모의 시작을 축하해요!
                 </WellcomeText>
-                <TimelineContent>
+                <div style={{width: '100%'}}>
                     {isLoading ? (
                         <p>Loading...</p>
                     ) : (
-                        <div>
+                        <TimelineContent>
                             {myList.map((item: any) => (
                                 <TimelineBox>
                                     <TimelineText>
@@ -155,9 +174,12 @@ export default function Timeline() {
                                     </div>
                                 </TimelineBox>
                             ))}
-                        </div>
+                        </TimelineContent>
                     )}
-                </TimelineContent>
+                </div>
+                <AddBox>
+                    <IoAddCircleOutline/>
+                </AddBox>
             </TimelineContainer>
             <Footer/>
         </div>
