@@ -12,9 +12,7 @@ const LogoContainer = styled.div`
     //flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
+
     width: 100%;
     height: 10vh;
 
@@ -35,12 +33,10 @@ const TimelineContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    padding: 10vh 0;
-    overflow-y: scroll;
+    height: 80vh;
+    overflow-y: hidden;
 
     font-size: 12pt;
-
-    //background-color: lightcoral;
 `;
 
 const AddBox = styled.div`
@@ -107,10 +103,13 @@ export default function Timeline() {
 
     return (
         <div>
+            <LogoContainer>
+                <img src={process.env.PUBLIC_URL + 'img/logo/timeline_logo.png'} alt="Logo"/>
+            </LogoContainer>
             <TimelineContainer>
-                <div style={{width: '100%'}}>
+                <div style={{width: '100%', overflowY: 'scroll'}}>
                     {isLoading ? (
-                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '75vh'}}>
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
                             <CircularProgress/>
                         </div>
                     ) : (
@@ -126,9 +125,6 @@ export default function Timeline() {
                     )}
                 </div>
             </TimelineContainer>
-            <LogoContainer>
-                <img src={process.env.PUBLIC_URL + 'img/logo/timeline_logo.png'} alt="Logo"/>
-            </LogoContainer>
             <Footer/>
         </div>
     );

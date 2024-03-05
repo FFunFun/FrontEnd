@@ -14,6 +14,7 @@ const TimelineContent = styled.div`
 `;
 
 const TimelineBox = styled.div`
+    position: relative;
     display: flex;
     justify-content: space-between;
 
@@ -51,20 +52,22 @@ const Icon = styled.div`
 `;
 
 const Circle = styled.div`
-    color: blue;
-    font-size: 1rem;
     position: absolute; /* 부모 요소에 상대적으로 위치 */
     left: 38vw; /* 부모 요소의 중앙에 위치 */
     transform: translate(-50%, -10%); /* 가운데 정렬 */
+
+    color: blue;
+    font-size: 1rem;
 `;
 
 const Line = styled.div`
-    background-color: blue;
-    width: 3px;
-    height: 40vh; /* 부모 요소의 높이에 맞게 설정 */
     position: absolute; /* 부모 요소에 상대적으로 위치 */
     left: 38vw; /* 부모 요소의 중앙에 위치 */
     transform: translateX(-50%); /* 가운데 정렬 */
+
+    background-color: blue;
+    width: 3px;
+    height: 40vh; /* 부모 요소의 높이에 맞게 설정 */
 `;
 
 const TimelineList: React.FC<{ items: TimelineItem[] }> = ({items}) => {
@@ -78,7 +81,7 @@ const TimelineList: React.FC<{ items: TimelineItem[] }> = ({items}) => {
                         <br/>
                         {item.content}
                     </TimelineText>
-                    <div>
+                    <>
                         <Circle>
                             <FaCircle/>
                         </Circle>
@@ -87,7 +90,7 @@ const TimelineList: React.FC<{ items: TimelineItem[] }> = ({items}) => {
                         ) : (
                             <br/>
                         )}
-                    </div>
+                    </>
                     <div>
                         <TimelineImg src={'https://picsum.photos/200/200'}/>
                         <CommentContainer>
