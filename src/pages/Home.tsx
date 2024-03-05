@@ -25,7 +25,7 @@ export default  function Home() {
         <div>
             <StyledContainer>
             
-                <StyledImage src={process.env.PUBLIC_URL + '/FfunLogo.png'} alt="Logo" />
+                <StyledImage src={process.env.PUBLIC_URL + '/FFF_login_logo.png'} alt="Logo" />
                 <Link to="/register">
                     <StyledButton src={process.env.PUBLIC_URL + '/NaverLogin.png'} alt="Naver"/>
                 </Link>
