@@ -70,7 +70,8 @@ export default function Timeline() {
     const myList: TimelineItem[] = [
         {date: '2023.03.02', content: '소전17 뻔 모임 시작'},
         {date: '2023.10.03', content: '두 번째 회식!'},
-        {date: '2024.03.10', content: '처음 모두 모인 뻔모~!'},
+        {date: '2024.02.10', content: '18졸업식'},
+        {date: '2024.03.10', content: '새학기 새뻔모~!'},
     ];
 
     useEffect(() => {
