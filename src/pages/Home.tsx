@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
-import styled from 'styled-components';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -20,23 +20,31 @@ const StyledButton = styled.img`
   margin-top: 5px; /* 버튼 간격 조정 */
 `;
 
-export default  function Home() {
-    return(
-        <div>
-            <StyledContainer>
-            
-                <StyledImage src={process.env.PUBLIC_URL + 'img/logo/FFF_login_logo.png'} alt="Logo" />
-                <Link to="/register">
-                    <StyledButton src={process.env.PUBLIC_URL + 'img/social/NaverLogin.png'} alt="Naver"/>
-                </Link>
-                {/*<Link to="/register">*/}
-                {/*    <StyledButton src={process.env.PUBLIC_URL + 'img/social/KakaoLogin.png'} alt="Kakao" />*/}
-                {/*</Link>*/}
-                <Link to="/register">
-                    <StyledButton src={process.env.PUBLIC_URL + 'img/social/GoogleLogin.png'} alt="Google" />
-                </Link>
-            </StyledContainer>
-            <Footer/>
-        </div>
-    )
+export default function Home() {
+  return (
+    <div>
+      <StyledContainer>
+        <StyledImage
+          src={process.env.PUBLIC_URL + "img/logo/FFF_login_logo.png"}
+          alt="Logo"
+        />
+        <Link to="/register">
+          <StyledButton
+            src={process.env.PUBLIC_URL + "img/social/NaverLogin.png"}
+            alt="Naver"
+          />
+        </Link>
+        {/*<Link to="/register">*/}
+        {/*    <StyledButton src={process.env.PUBLIC_URL + 'img/social/KakaoLogin.png'} alt="Kakao" />*/}
+        {/*</Link>*/}
+        <Link to="/register">
+          <StyledButton
+            src={process.env.PUBLIC_URL + "img/social/GoogleLogin.png"}
+            alt="Google"
+          />
+        </Link>
+      </StyledContainer>
+      <Footer />
+    </div>
+  );
 }
